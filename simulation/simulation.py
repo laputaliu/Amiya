@@ -308,3 +308,5 @@ if __name__ == '__main__':
             '{}/{}.pth'.format(save_dir, save_tag)
         )
 
+        with open('{}/{}_spots.pkl'.format(save_dir, save_tag), 'wb') as f:
+            pkl.dump(disturb_spots, f)
